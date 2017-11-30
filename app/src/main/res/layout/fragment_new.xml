@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_color_ff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/length_44"
+        android:background="@color/bg_color_f9"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/size_18"
+            android:textColor="@color/text_color_00"
+            android:text="新品"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <com.example.apple.lingyongqian.xianjindai.view.pullableview.PullToRefreshLayout
+        android:id="@+id/new_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+
+        <com.example.apple.lingyongqian.xianjindai.view.pullableview.PullableScrollView
+            android:id="@+id/new_fragment_sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <cn.bingoogolapple.bgabanner.BGABanner
+                    android:id="@+id/new_fragment_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    style="@style/BannerDefaultStyle"
+                    app:banner_isNeedShowIndicatorOnOnlyOnePage="true"
+                    app:banner_pointDrawable="@drawable/point_selector"
+                    app:banner_pointAutoPlayAble="true"
+                    app:banner_pointContainerBackground="@android:color/transparent"
+                    app:banner_transitionEffect="defaultEffect"
+                    >
+                </cn.bingoogolapple.bgabanner.BGABanner>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    >
+                    <ImageView
+                        android:id="@+id/new_fragment_iv"
+                        android:layout_width="14dp"
+                        android:layout_height="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/length_10"
+                        android:src="@mipmap/new_fragment1"/>
+                    <com.example.apple.lingyongqian.xianjindai.view.VerticalViewPager
+                        android:id="@+id/new_fragment_vvp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/length_15"
+                        android:layout_toRightOf="@id/new_fragment_iv"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/length_4">
+
+                    </com.example.apple.lingyongqian.xianjindai.view.VerticalViewPager>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/length_40"
+                    android:background="@color/bg_color_f7">
+
+                    <View
+                        android:layout_width="@dimen/length_3"
+                        android:layout_height="@dimen/length_18"
+                        android:layout_marginLeft="@dimen/length_10"
+                        android:layout_centerVertical="true"
+                        android:background="@color/text_color_huang"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_12"
+                        android:textColor="@color/text_color_64"
+                        android:layout_marginLeft="@dimen/length_18"
+                        android:layout_centerVertical="true"
+                        android:text="产品列表"/>
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/new_fragment_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    >
+                </ListView>
+
+            </LinearLayout>
+
+
+        </com.example.apple.lingyongqian.xianjindai.view.pullableview.PullableScrollView>
+        <include layout="@layout/load_more" />
+    </com.example.apple.lingyongqian.xianjindai.view.pullableview.PullToRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/diary_content"
+        android:hint="编辑日记"
+        android:textSize="16sp"
+        android:gravity="left|top"
+        android:autoLink="all"
+        android:maxLines="100"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"/>
+</LinearLayout>

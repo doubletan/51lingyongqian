@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@drawable/grild_item_bg"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:id="@+id/crad_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/card_type"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:src="@mipmap/item_place"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:id="@+id/crad_name"
+            android:text="名片测试"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/add_card"
+        android:background="@drawable/grild_item_bg"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

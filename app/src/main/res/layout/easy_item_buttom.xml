@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="4dp"
+    android:paddingBottom="8dp"
+    android:gravity="right|center"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/today_more"
+        android:src="@mipmap/menu_small"
+        android:layout_width="@dimen/easy_item_buttom"
+        android:layout_height="@dimen/easy_item_buttom"
+        android:layout_marginRight="8dp"/>
+</LinearLayout>

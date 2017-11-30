@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:clickable="true"
+        app:cardCornerRadius="0dp"
+        android:foreground="?android:selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:cardElevation="10dp">
+    <LinearLayout
+        android:id="@+id/quick_menu"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:paddingBottom="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/menu1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/note_press">
+            <ImageView
+                android:src="@mipmap/note_normal"
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_width"
+                android:layout_marginBottom="@dimen/img_text_betwin"/>
+            <TextView
+                android:textSize="@dimen/quick_size"
+                android:textColor="@color/quick_color"
+                android:text="@string/add_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/menu2"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/card_press">
+            <ImageView
+                android:src="@mipmap/card_normal"
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:layout_marginBottom="@dimen/img_text_betwin"/>
+            <TextView
+                android:text="@string/add_card"
+                android:textSize="@dimen/quick_size"
+                android:textColor="@color/quick_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal|center_vertical"
+            android:id="@+id/menu3"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/bill_press">
+            <ImageView
+                android:src="@mipmap/bill_normal"
+                android:layout_width="@dimen/img_width"
+                android:layout_height="@dimen/img_height"
+                android:layout_marginBottom="@dimen/img_text_betwin"/>
+            <TextView
+                android:text="@string/add_bill"
+                android:textSize="@dimen/quick_size"
+                android:textColor="@color/quick_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <include layout="@layout/main_divider_info2"/>
+    <include layout="@layout/easy_item_layout"/>
+    <include layout="@layout/main_divider_info"/>
+    <include layout="@layout/history_listview"/>
+    <!--<com.andexert.library.RippleView-->
+        <!--android:id="@+id/load_more"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:background="@color/card_auto"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:paddingTop="16dp"-->
+        <!--android:paddingBottom="16dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toEndOf="@+id/view">-->
+        <!--<TextView-->
+            <!--android:id="@+id/get_more"-->
+            <!--android:text="加载更多"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</com.andexert.library.RippleView>-->
+</LinearLayout>

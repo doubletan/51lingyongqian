@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginBottom="6dp"
+    android:showDividers="middle"
+    android:divider="@mipmap/ic_img_line_v"
+    android:background="@drawable/tablayout_butttom_bg"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="4dp"
+    android:paddingTop="4dp"
+    android:elevation="4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/note"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/note_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/card"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/card_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/bill"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/bill_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/diary"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/diary_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

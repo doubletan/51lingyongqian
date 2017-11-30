@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/head_img_bg"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+            <com.example.apple.lingyongqian.utils.RoundImageView
+                android:src="@mipmap/ic_img_user_default"
+                android:id="@+id/head_img"
+                android:layout_width="74dp"
+                android:layout_height="74dp"/>
+        </LinearLayout>
+        <TextView
+            android:background="#fff"
+            android:layout_width="30dp"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:id="@+id/all_feeling"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:background="@drawable/head_img_bg"
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+            <!--<TextView-->
+                <!--android:gravity="center_horizontal|center_vertical"-->
+                <!--android:textColor="#fff"-->
+                <!--android:text="心情"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+            <ImageView
+                android:gravity="center_horizontal|center_vertical"
+                android:id="@+id/sex_img"
+                android:src="@mipmap/sexs"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/info_says_betwin"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.example.apple.lingyongqian.utils.AutofitTextView
+            android:id="@+id/username"
+            android:textColor="#fff"
+            android:text="auto"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

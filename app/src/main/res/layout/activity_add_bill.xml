@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            app:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/add_toolbar"
+                android:background="@color/card_auto"
+                app:layout_scrollFlags="scroll"
+                app:contentInsetStart="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+                <include layout="@layout/add_toolbar_view"/>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:id="@+id/add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/add_bill_in"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/minus"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <include layout="@layout/add_bill_out"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <include layout="@layout/add_bill_buttom"/>
+    </LinearLayout>
+
+</RelativeLayout>

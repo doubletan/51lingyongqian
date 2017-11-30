@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RadioGroup
+        android:layout_marginTop="4dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="进账"
+            android:id="@+id/in"
+            android:checked="true"
+            android:textColor="@color/card_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="出账"
+            android:id="@+id/out"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/card_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintAnimationEnabled="true">
+        <EditText
+            android:id="@+id/item_bill_num"
+            android:textColorHint="@color/card_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="数目/￥"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintAnimationEnabled="true">
+        <EditText
+            android:id="@+id/item_bill_name"
+            android:textColorHint="@color/card_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="来源/用途"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintAnimationEnabled="true">
+        <EditText
+            android:id="@+id/item_bill_describ"
+            android:textColorHint="@color/card_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="其它描述"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/each_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include android:id="@+id/note_lay" layout="@layout/item_note_less"/>
+        <include android:id="@+id/card_lay" layout="@layout/item_card_less"/>
+        <include android:id="@+id/bill_lay" layout="@layout/item_bill_less"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/no_content"
+        android:paddingTop="40dp"
+        android:background="#fff"
+        android:paddingBottom="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@mipmap/add"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:padding="4dp"
+            android:background="@drawable/grild_item_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="可从导航快速添加"
+            android:textColor="@color/card_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/bg_color_ff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/new_product_vvp_item_tv1"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/text_color_32"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/new_product_vvp_item_tv2"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/text_color_huang"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/new_product_vvp_item_tv3"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/text_color_32"
+        android:text="成功借款"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/new_product_vvp_item_tv4"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/text_color_huang"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/new_product_vvp_item_tv5"
+        android:textSize="@dimen/size_12"
+        android:textColor="@color/text_color_32"
+        android:text="元"
+        />
+
+</LinearLayout>

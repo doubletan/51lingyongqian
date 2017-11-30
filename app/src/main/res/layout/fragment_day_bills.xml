@@ -1,0 +1,63 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        app:elevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/add_toolbar"
+            app:layout_scrollFlags="scroll"
+            app:contentInsetStart="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+            <include layout="@layout/day_item_toolbar_view"/>
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@color/card_auto"
+            android:gravity="center"
+            android:weightSum="1"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/in"
+                android:text="进账"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/out"
+                android:text="支出"
+                android:gravity="left"
+                android:layout_weight="0.5"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            app:tabTextColor="@color/card_auto"
+            app:tabSelectedTextColor="@color/card_auto"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</android.support.design.widget.CoordinatorLayout>

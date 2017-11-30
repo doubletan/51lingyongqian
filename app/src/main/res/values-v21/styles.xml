@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+                <!-- Customize your theme here. -->
+                <item name="android:colorPrimary">#00000000</item>
+                <item name="android:colorPrimaryDark">#00000000</item>
+                <item name="android:colorAccent">#fff</item>
+                <item name="android:statusBarColor">@android:color/transparent</item>
+                <item name="toolbarStyle">@style/ToolbarLeft</item>
+                <item name="android:windowTranslucentStatus">true</item>
+        </style>
+
+        <style name="ToolbarLeft" parent="Widget.AppCompat.Toolbar">
+                <item name="android:contentInsetStart">0dp</item>
+        </style>
+</resources>

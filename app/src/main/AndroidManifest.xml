@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.apple.lingyongqian">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.example.apple.lingyongqian.activity.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="icon">
+        <activity
+            android:name="com.example.apple.lingyongqian.activity.GuildActivity"
+            android:theme="@style/FirstTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.apple.lingyongqian.xianjindai.activity.XianJinDai"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".xianjindai.activity.WebViewActivity"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name="com.example.apple.lingyongqian.utils.AddDiaryActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AddBillActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AddCardActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AddNoteActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AllBillActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AllCardActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AllCardItemActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AllCompanyItemActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AllDiaryActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AllNotesActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.AllPlaceItemActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.BaseSettingActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.CloudActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.LoginActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.MainActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.OneDayAllActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.PassToActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.RegistActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.SettingActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.UserBaseInfoActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.HtmlActivity" />
+        <activity android:name="com.example.apple.lingyongqian.activity.Login2Activity"></activity>
+        <activity
+            android:name="com.example.apple.lingyongqian.activity.GuideActivity"
+            android:theme="@style/AppTheme.Splash" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58bd24d5c62dca46c60010f8" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="tengxun" />
+
+        <activity
+            android:name="com.example.apple.lingyongqian.activity.Main2Activity"
+            android:theme="@style/AppTheme1" />
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="G:\Go\51lingyongqian\library\assets"/><source path="G:\Go\51lingyongqian\library\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="G:\Go\51lingyongqian\library\src\debug\assets"/></dataSet></merger>

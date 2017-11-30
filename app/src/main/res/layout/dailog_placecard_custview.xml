@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintAnimationEnabled="true">
+        <EditText
+            android:id="@+id/item_place_name"
+            android:textColorHint="@color/card_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="名称"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:hintAnimationEnabled="true">
+        <EditText
+            android:id="@+id/item_place_address"
+            android:textColorHint="@color/card_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="地址"/>
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

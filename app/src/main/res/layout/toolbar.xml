@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="50dp"
+    android:id="@+id/toolbar"
+    android:background="#F59915"
+    android:layout_width="match_parent"
+    >
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_back"/>
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:text="产品详情"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.Toolbar>

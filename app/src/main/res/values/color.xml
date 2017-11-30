@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 头部bar颜色-->
+    <color name="bar_bg">#6d4c41</color>
+    <!-- 头部zoom颜色-->
+    <color name="zoom_bg">#795548</color>
+    <!-- 快速导航背景颜色-->
+    <color name="auto">#795548</color>
+    <color name="quick_color">#fff</color>
+    <color name="del_bg">#f36c60</color>
+    <color name="share_bg">#26a69a</color>
+
+    <!-- 快速导航背景颜色 配色方案1-->
+    <color name="note_pressed">#b0bec5</color>
+    <color name="card_pressed">#90a4ae</color>
+    <color name="bill_pressed">#78909c</color>
+    <color name="note_auto">#78909c</color>
+    <color name="card_auto">#607d8b</color>
+    <color name="bill_auto">#546e7a</color>
+    <color name="ba_touming">#80000000</color>
+
+    <color name="easy_top_bg">#607d8b</color>
+    <color name="easy_top_else">#455a64</color>
+    <color name="easy_item_textcolor">#607d8b</color>
+
+    <color name="share_item_bg">#4CD964</color>
+
+    <color name="slid_menu2">#00bcd4</color>
+    <color name="slid_menu1">#607d8b</color>
+    <color name="slid_menu3">#f36c60</color>
+    <color name="slid_menu4">#ffab40</color>
+    <color name="slid_menu5">#546e7a</color>
+
+    <color name="green_color">#00bb9c</color>
+    <color name="base_color">#607d8b</color>
+    <color name="blue_color">#00bcd4</color>
+    <color name="orange_color">#ffab40</color>
+    <color name="pink_color">#f36c60</color>
+
+
+    <color name="grey_b2b2b2">#B2B2B2</color>
+    <color name="blue_78d2f6">#78D2F6</color>
+    <color name="blue_01aaee">#01AAEE</color>
+    <color name="blue_00aaee">#00AAEE</color>
+    <color name="red_f3323b">#F3323B</color>
+
+    <color name="color_ffffff">#ffffff</color>
+    <color name="nav_bg_color">#63b953</color>
+    <color name="window_background">#FFF5F5F5</color>
+</resources>
